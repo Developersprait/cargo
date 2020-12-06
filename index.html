@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Грузоперевозки Брест</title>
+    <meta name="description" content="Грузоперевозки в Бресте. Лидер по грузоперевозкам и перевозкам пассажиров. КРУГЛОСУТОЧНО. 
+    Наличный и безналичный расчет. Цены от 20 рублей. ">
+    <meta name="keywords" content="брест грузоперевозки, брест пассажироперевозки, переезд брест,
+    брест грузовик, брест грузчики">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav__bar">
+            <div class="menu">
+                <div class="container">
+                    <nav class="menu__nav">
+                        <a href="index.html" class="menu__link">Главная</a>
+                        <a href="services.html" class="menu__link">Услуги</a>
+                        <a href="transport.html" class="menu__link">Транспорт</a>
+                        <a href="contacts.html" class="menu__link">Контакты</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="nav__bar-wrap">
+                <button class="menu-btn nav__bar__menu-btn">
+                    <!-- <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>
+                    <span class="menu-btn__line"></span>-->
+                </button>
+                <div class="logo nav__bar-logo">
+                    <strong class="logo__text">Грузоперевозки в Бресте</strong>
+                    <span class="logo__description">лидер в грузоперевозках</span>
+                </div>
+                <div class="nav__bar-mobile">
+                    <a class="nav__bar-phone" href="tel:+375333020590">+37533 302 05 90</a>
+                    <span class="nav__bar-time nav__bar-stext">круглосуточно, Воскресенье-выходной</span>
+                </div>
+                <div class="nav__bar-mobile2">
+                    <a class="nav__bar-phone" href="tel:+375292451864">+37529 245 18 64</a>
+                    <a href="mailto:strelchuk.lll@gmail.com"
+                        class="nav__bar-email nav__bar-stext">strelchuk.lll@gmail.com</a>
+                </div>
+                <!-- <button class="button-o nav__bar-btn">Получить консультацию</button> -->
+                <button data-fancybox data-src="#modal" href="javascript:;"
+                class=" button-o nav__bar-btn" href="#">Получить консультацию</button>
+            </div>
+        </div>
+
+        <!-- /.nav__bar -->
+        <div class="hero">
+
+            <div class="container">
+
+                <h1 class="hero__title animated fadeInLeft">Гарантия<br>лучших цен<br>на грузоперевозки
+                </h1>
+                <span class="hero__subtitle animated fadeInLeft"><b>от 20 рублей</b></span>
+                <!-- <button class="">Заказать звонок</button> -->
+                <button data-fancybox data-src="#modal" href="javascript:;"
+                class=" button hero__btn animated fadeInLeft" href="#">Заказать звонок</button>
+            </div>
+        </div>
+        <!-- /.hero -->
+    </header>
+    <!-- /.header -->
+    <main>
+        <section class="offer bg-secondary">
+            <div class="container">
+                <div class="offer__block offer-block">
+                    <h2 class="offer__title animated fadeInLeft">Оставьте заявку</h2>
+                    <span class="offer__subtitle animated fadeInLeft">и получите скидку на грузоперевозки или перевозку пассажиров</span>
+                    <form action="mail.php" method="POST" class="form offer__form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <label for="" class="form__label">Габариты груза
+                                </label>
+                                <input type="text" class="input form__input" placeholder="м*м*м">
+                            </div>
+                            <div class="form__group">
+                                <label for="" class="form__label">Вес груза
+                                </label>
+                                <input type="text" class="input form__input" placeholder="кг">
+                            </div>
+                            <div class="form__group">
+                                <label for="" class="form__label">Пассажиры
+                                </label>
+                                <input type="text" class="input form__input" placeholder="чел.">
+                            </div>
+                        </div>
+                        <div class="form__row form__row-checkbox">
+                            <div class="form__checkbox">
+                                <input class="checkbox" type="checkbox" id="trucking">
+                                <label class="checkbox-label" for="trucking">
+
+                                    Грузоперевозки
+                                </label>
+                            </div>
+                            <div class="form__checkbox">
+                                <input class="checkbox" type="checkbox" id="delivery">
+                                <label class="checkbox-label" for="delivery">
+
+                                    Пассажироперевозки
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input class="form__input input" type="text" placeholder="Введите имя"  name="user_name" required>
+                            </div>
+                            <div class="form__group">
+                                <input class="form__input input" type="text" placeholder="Ваш телефон" name="user_phone" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="submit" class="button form__button" value="Отправить">
+                                
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="features section">
+            <div class="container">
+                <h2 class="section-title section__title animated">
+                    Наши преимущества
+                </h2>
+                <div class="features-block">
+                    <div class="features-block__item">
+                        <img src="img/f1.png" alt="Работа по Бресту, области и РБ" class="feature-block__image">
+                        <p class="feature-block__text">Работа по Бресту, области и РБ</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/f2.png" alt="Лучшие цены в городе" class="feature-block__image">
+                        <p class="feature-block__text">Лучшие цены в городе</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/f3.png" alt="Широкий выбор транспорта" class="feature-block__image">
+                        <p class="feature-block__text">Широкий выбор транспорта</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/f4.png"
+                            alt="еревозка стройматериалов, пиломатериалов, металла, оборудования и т.д."
+                            class="feature-block__image">
+                        <p class="feature-block__text">Перевозка стройматериалов,<br> пиломатериалов, металла,
+                            <br>оборудования и т.д.</p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/f5.png" alt="Переезды" class="feature-block__image">
+                        <p class="feature-block__text">Переезды <br>Офисные, дачные, квартирные <br><i>Возможен заказ
+                                грузчиков</i></p>
+                    </div>
+                    <div class="features-block__item">
+                        <img src="img/f6.png" alt="Буксировка прицепов, станций и т.д." class="feature-block__image">
+                        <p class="feature-block__text">Буксировка прицепов, станций и т.д.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section catalog">
+            <div class="container">
+                <h2 class="section-title section__title animated">Каталог транспорта</h2>
+                <div class="catalog-block">
+                    <div class="catalog-card">
+                        <img src="img/c1.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <!-- <button class="button-fitting catalog-card__button">Заказать</button> -->
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img src="img/c2.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img src="img/c3.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img src="img/c4.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img src="img/c5.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                    <div class="catalog-card">
+                        <img src="img/c6.jpg" alt="">
+                        <div class="catalog-card__buttons">
+                            <button data-fancybox data-src="#modal" href="javascript:;"
+                            class="button-fitting catalog-card__button" href="#">Заказать</button>
+                            <button class="button-like"><img src="img/heart.jpg" alt=""></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section steps">
+            <div class="container">
+                <h2 class="section-title section__title animated">
+                    Этапы работ
+                </h2>
+                <div class="steps-block">
+                    <div class="step">
+                        <img src="img/s0.png" alt="Заявка" class="step__image">
+                        <h4 class="step__title">
+                            Заявка
+                        </h4>
+                        <p class="step__text">
+                            Оставьте заявку у нас на сайте или позвоните нам
+                        </p>
+                    </div>
+                    <div class="step">
+                        <img src="img/s1.png" alt="Договор" class="step__image">
+                        <h4 class="step__title">
+                            Договор
+                        </h4>
+                        <p class="step__text">
+                            Сообщите в заявке или во время звонка габариты, вес и расстояние
+                        </p>
+                    </div>
+                    <div class="step">
+                        <img src="img/s2.png" alt="Погрузка" class="step__image">
+                        <h4 class="step__title">
+                            Погрузка
+                        </h4>
+                        <p class="step__text">
+                            Погрузка Вами или с привлечением наших услуг
+                        </p>
+                    </div>
+                    <div class="step">
+                        <img src="img/s3.png" alt="Транспортировка" class="step__image">
+                        <h4 class="step__title">
+                            Транспортировка
+                        </h4>
+                        <p class="step__text">
+                            Максимально быстрая и аккуратная доставка
+                        </p>
+                    </div>
+                    <div class="step">
+                        <img src="img/s4.png" alt="Выгрузка" class="step__image">
+                        <h4 class="step__title">
+                            Выгрузка
+                        </h4>
+                        <p class="step__text">
+                            Выгрузка Вашего груза по адресу назначения
+                        </p>
+                    </div>
+                    <div class="step">
+                        <img src="img/s5.png" alt="Оплата" class="step__image">
+                        <h4 class="step__title">
+                            Оплата
+                        </h4>
+                        <p class="step__text">
+                            Оплата наших услуг согласно выполненных работ
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section reviews">
+            <div class="container">
+                <h2 class="section-title section__title animated">
+                    Отзывы наших клиентов
+                </h2>
+                <div class="reviews-slider">
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            <p>Возникла необходимость организовать переезд в новую квартиру.
+                                Ребята все сделали очень организовано и быстро.
+                                Все очень понравилось. Спасибо.</p>
+                        </div>
+                        <img src="img/person1.png" alt="photo1" class="reviews-slider__img">
+                        <span class="reviews-slider__name">
+                            Наталья Степанюк
+                        </span>
+                    </div>
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            <p>Часто сталкиваемся с недопониманием со стороны сотрудников грузоперевозок,
+                                но воспользовавшись услугами тут,
+                                все было предельно понятно как для меня, так и для работников грузоперевозки...5 из 5
+                            </p>
+                        </div>
+                        <img src="img/person2.png" alt="Photo1" class="reviews-slider__img">
+                        <span class="reviews-slider__name">
+                            Валентина Тышкевич
+                        </span>
+                    </div>
+                    <div class="reviews-slider__item">
+                        <div class="reviews-slider__text">
+                            <p>Потребовалось перевезти большой объём деревянного бруса из района в город.
+                                Парни перевезли все быстро и оперативно. Сервис - супер!
+                                Рекомендую.</p>
+                        </div>
+                        <img src="img/person3.png" alt="photo2" class="reviews-slider__img">
+                        <span class="reviews-slider__name">
+                            Вячеслав Шуляк
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="offer bg-secondary bg-secondary__call">
+            <div class="container">
+                <div class="offer__block-bottom offer-block__bottom">
+                    <h2 class="offer__title animated">Ищите где дешевле и лучше?</h2>
+                    <span class="offer__subtitle animated">оставьте заявку на сайте и мы максимально быстро перезвоним Вам</span>
+                    <form action="mail.php" method="POST" class="form offer__form">
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input type="text" class="input form__input" placeholder="Ваше имя" name="user_name" required>
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="input form__input" placeholder="Ваш e-mail" name="user_email">
+                            </div>
+                            <div class="form__group">
+                                <input type="text" class="input form__input" placeholder="Ваш телефон" name="user_phone" required>
+                            </div>
+                        </div>
+
+                        <div class="form__row">
+                            <div class="form__group">
+                                <input type="submit" class="button form__button form__button-call"
+                                    value="Заказать звонок">
+                            </div>
+
+                            <div class="form__group">
+                                <span class="form__policy">Ваши данные надежно защищены.
+                                    Отправление заявки ни к чему не обязывает.</span>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="section about">
+            <div class="container">
+                <h2 class="section-title section__title animated">
+                    О предприятии
+                </h2>
+                <div class="about-block">
+                    <img src="img/about.jpg" alt="" class="about-block__img">
+                    <p class="about-block__text">
+                        Наше предприятие успешно работает с 1990го года и на сегодняшний день
+                        занимает одно из лидирующих позиций в Бресте. Наша команда поможет вам справиться
+                        с переездами людой сложности, от перевозки мебели до перевозки большого объема
+                        стройматериалов.
+                        <br><br> В нашем автопарке есть 2 буса, один мебельный фургон, один тентованный грузовик и 2
+                        бортовых
+                        грузовика. Предоставляем услуги перевозки грузов, пассажиров, услуги
+                        грузчиков и услуги катафалка. Работа по Бресту, области, РБ и СНГ.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="section contacts">
+            <div class="container">
+                <h2 class="section-title section__title animated">
+                    Контакты
+                </h2>
+                <div class="contacts-block ">
+                    <div class="contacts-block__item">
+                        <img src="img/con1.png" alt="phone" class="contacts__image">
+                        <div class="contacts__text">
+                            <a class="contacts__link" href="tel:+375333020590">
+                                +375 33 302-05-90
+                            </a>
+                        </div>
+                    </div>
+                    <div class="contacts-block__item">
+                        <img src="img/con2.png" alt="adress" class="contacts__image">
+                        <div class="contacts__text">
+                            <address class="contacts__adress">г.Брест, ул.Изумрудная д.1</address>
+                        </div>
+                    </div>
+                    <div class="contacts-block__item">
+                        <img src="img/con3.png" alt="email" class="contacts__image">
+                        <div class="contacts__text">
+                            <a href="mailto:strelchuk.lll@gmail.com" class="contacts__link">strelchuk.lll@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="map" id="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2449.3423528784315!2d23.705585115365068!3d52.128093672951664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4721093e54020753%3A0x4822e35f45922a69!2z0YPQuy4g0JjQt9GD0LzRgNGD0LTQvdCw0Y8gMSwg0JHRgNC10YHRgg!5e0!3m2!1sru!2sby!4v1603540613216!5m2!1sru!2sby"
+                width=100% height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                tabindex="0">
+            </iframe>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-block">
+                <div class="footer__description">
+                    <h3 class="footer__title">Грузоперевозки в Бресте</h3>
+                    <p class="footer__subtitle">ИП Стрельчук УНП 291536528 <br>
+                        Выдан адинистрацией Ленинского района 21.05.2018
+                    </p>
+                </div>
+                <div class="footer-pay">
+                    <img class="footer-pay__logo" src="img/visa.png" alt="visa">
+                </div>
+                <div class="footer-contacts">
+                    <a class="footer-contacts__link" href="tel:+375333020590">+375333020590</a>
+                    <a class="footer-contacts__link" href="tel:+375292451864">+375292451864</a>
+                    <a class="footer-contacts__link" href="mailto:strelchuk.llll@gmail.com">strelchuk.llll@gmail.com</a>
+
+                </div>
+                <div class="footer-social">
+                    <a class="footer-social__logo" href="https://vk.com/public174371440"><img src="img/vk.png"
+                            alt="vk"></a>
+                    <a class="footer-social__logo" href="https://www.instagram.com/brestgruzoperevozki/?hl=ru"><img
+                            src="img/insta.png" alt="instagramm"></a>
+                    <a class="footer-social__logo" href="viber://chat?number=%2B375333020590"><img src="img/viber.png"
+                            alt="viber"></a>
+                    <a class="footer-social__logo" href="tg://resolve?domain=+375333020590"><img src="img/telegram.png"
+                            alt=""></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="info"> © Все права защищены. Developed by Lev Antoshyn</div>
+    </footer>
+
+    <div id="modal">
+        <form action="mail.php" method="POST">
+            <input class="input form__input form-input" type="text" name="user_name"placeholder="Ваше имя">
+            <input class="input form__input form-input" type="text" name="user_phone" placeholder="Ваш телефон">
+            <input  class="button form__button form__button__modal" type="submit" value="Отправить">
+        </form>
+    </div>
+   
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

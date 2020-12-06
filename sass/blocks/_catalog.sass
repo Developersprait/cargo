@@ -1,0 +1,33 @@
+.catalog
+    background-color: #f5f6f8
+    &-block
+        display: flex
+        justify-content: space-around 
+        flex-wrap: wrap
+    &-card
+        color: #f1f1f1
+        height: 250px
+        max-width: 570px
+        position: relative
+        margin-bottom: 25px
+        box-shadow: 7px 5px 21px rgba(0, 0, 0, 0.1)
+        &__buttons
+            position: absolute
+            bottom: 0
+            right: 0
+            
+@media (max-width: 991px)
+    .catalog
+        &-card
+            max-width: 470px
+            height: auto
+@media (max-width: 520px)
+    .catalog
+        &-card
+            max-width: 320px
+            height: auto
+
+              
+
+            
+

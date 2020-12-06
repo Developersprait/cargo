@@ -1,0 +1,49 @@
+.contact
+    padding-top: 65px
+    padding-bottom: 30px
+    background-color: #f5f6f8
+    &-block
+        display: flex
+        justify-content: space-around
+        text-align: center
+        position: relative
+        &__title          
+            font-size: 30px
+            color: #000
+            font-family: 'Proxima Nova Semibold',sans-serif
+            text-transform: uppercase
+        &__links
+            padding-top: 55px 
+        &__link
+            display: block
+            text-decoration: none 
+            text-align: left  
+            margin: 12px 0 
+            color: #000000
+            font-size: 20px
+            font-family: 'Proxima Nova Semibold',sans-serif
+            transform: translateX(-160px)
+        &__link:hover
+            color:#507fe1 
+.footer
+    &-contact
+        display: block
+        width: 150px
+        line-height: 24px
+@media (max-width: 610px)
+    .contact
+        &-block
+            display: block
+            padding-top: 100px
+            &__img
+                height: auto
+            &__link
+                transform: translateX(0)
+                padding-top: 15px
+                width: 100% 
+    .footer
+        &-social
+            margin-top: 15px
+            margin-bottom: 20px                                          
+
+                

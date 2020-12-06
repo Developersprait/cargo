@@ -1,0 +1,36 @@
+.service
+    padding-top: 65px
+    padding-bottom: 30px
+    background-color: #f5f6f8
+    &-block
+        display: flex
+        justify-content: space-between
+        &__wrap
+            margin-right: 30px
+            text-align: center
+        &__title
+            font-size: 30px
+            color: #000
+            font-family: 'Proxima Nova Semibold',sans-serif
+            text-transform: uppercase
+        &__img
+            width: 300px
+            height: 280px 
+            margin-top: 20px  
+        &__text
+            padding-top: 65px
+            width: 60%
+            color: #000    
+@media (max-width: 610px)
+    .service
+        &-block
+            display: block
+            padding-top: 100px
+            &__img
+                height: auto
+            &__text
+                padding-top: 30px
+                width: 100% 
+    .footer
+        &-social
+            margin-bottom: 20px                       

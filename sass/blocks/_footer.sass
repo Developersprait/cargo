@@ -1,0 +1,43 @@
+.footer
+    padding: 40px 0 0 0
+    background-color: #262626
+    color: #fff
+    &-block
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &-pay
+        &__logo
+            min-width: 32px
+            min-height: 32px  
+    &-contacts
+        max-width: 150px  
+        &__link
+            line-height: 24px
+    a
+        color: #fff
+        text-decoration: none
+        margin-bottom: 10px
+    &__title
+        text-transform: uppercase
+        font-family: 'Proxima Nova Semibold',sans-serif
+        margin-top: 0
+    &-social
+        &__logo
+            margin: 0 5px   
+    
+@media (max-width: 420px)
+    .footer
+        &-block
+            display: block
+            flex-basis: 100%
+        &-pay
+            margin-bottom: 25px 
+        &-contacts
+            margin-bottom: 25px 
+            &__link
+                line-height: 24px 
+        &-social
+            &__logo
+                margin: 0 5px                   
+

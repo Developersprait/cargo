@@ -1,0 +1,93 @@
+
+.nav__bar
+    position: relative
+    left: 0
+    top: 0
+    width: 100%
+    background-color: #fff
+    &-wrap
+        display: flex
+        align-items: center
+        justify-content: space-between   
+    &-mobile, &-mobile2
+        text-align: right
+    &-phone
+        font-size: 19px
+        font-family: 'Proxima Nova Semibold'  
+        display: block
+        text-decoration: none
+        color: #262626   
+        margin-bottom: 5px  
+    &-stext
+        font-size: 14px
+        color: #6b6b6b
+        text-decoration: none
+        display: block
+
+.menu
+    position: absolute
+    top: 80px
+    left: 0
+    padding: 10px 0
+    width: 100%
+    background-color: #507fe1 
+    color: #fff
+    /*&_active
+        transform: translateY(0)*/
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &__link
+        text-decoration: none
+        font-size: 17px
+        text-transform: uppercase
+        color: #fff
+    &-btn
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        background: #fff url(../img/truck_PNG16259.png) no-repeat center
+        border: none
+        border-right: 1px solid  rgba(#510bba, 0.1)
+        border-left: 1px solid rgba(#510bba, 0.1)
+        height: 80px
+        width: 70px
+       
+.logo
+    &__text
+        display: block
+        font-size: 18px
+        text-transform: uppercase
+        font-family: 'Proxima Nova Semibold'
+        margin-bottom: 5px
+        text-align: center
+    &__description
+        font-size: 14px    
+        display: block
+        color: #6b6b6b
+        text-align: center
+@media (max-width: 991px)
+    .nav__bar
+        &-mobile, &-mobile2
+            display: none
+@media (max-width: 576px)
+    .nav__bar-logo
+        display: none
+    .menu
+        &-button
+            height: 60px
+        &__nav
+            flex-direction: column
+            transform: translateY(0)
+        &__link
+            padding-top: 5px    
+
+
+            
+
+
+
+
+                
